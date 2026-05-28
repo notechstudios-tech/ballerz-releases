@@ -82,21 +82,6 @@
 
     .download-btn:hover { background: #ff4d5a; }
 
-    .play-btn {
-      display: inline-block;
-      background: #1a1a1a;
-      border: 1px solid #333;
-      color: #f0f0f0;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 14px 36px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.15s;
-    }
-
-    .play-btn:hover { background: #252525; }
-
     .version-note {
       margin-top: 14px;
       font-size: 0.82rem;
@@ -157,6 +142,8 @@
 
     .screenshot-grid img {
       width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
       border-radius: 10px;
       border: 1px solid #222;
     }
@@ -210,14 +197,9 @@
 <section class="hero">
   <h2>98 levels of<br>ball-smashing chaos.</h2>
   <p>Tap, aim, and destroy your way through 98 increasingly devious levels. Protect your player ball, hit targets, and rack up the highest score you can.</p>
-  <div class="btn-row">
-    <a class="download-btn" href="https://github.com/notechstudios-tech/ballerz-releases/releases/latest/download/app-release.apk">
-      Download APK
-    </a>
-    <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.notechstudios.ballerz_jam_ultimate_edition">
-      Google Play
-    </a>
-  </div>
+  <a class="download-btn" href="https://github.com/notechstudios-tech/ballerz-releases/releases/latest/download/app-release.apk">
+    Download APK
+  </a>
   <div class="version-note">Android 5.0+ &nbsp;·&nbsp; Free &nbsp;·&nbsp; v1.1.2</div>
 </section>
 
